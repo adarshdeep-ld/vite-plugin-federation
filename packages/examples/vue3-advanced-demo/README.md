@@ -1,25 +1,15 @@
-# Vue3 Advanced Module Federation Demo
+# Vue3 Module Federation Demo
 
-This example demos consumption of federated modules from a vite bundle, which comes from  https://micro-frontends.org/ .
+This example demos consumption of federated modules from a vite bundle. `layout` app depends on components exposed by `home`, `common-lib` and `css-modules` app.
 
-## Running Demo
+## Running Project
 
-1. ``` cd packages/examples/vue3-advanced-demo```
+1. Clone [adarshdeep-ld/vite-plugin-federation](https://github.com/adarshdeep-ld/vite-plugin-federation) if you haven't already.
+2. At the repository root, install dependencies (`pnpm install`) and build (`pnpm build`).
+3. Go to this example folder: `cd packages\examples\vue3-advanced-demo`
+4. Run `pnpm install`, `pnpm build` and `pnpm serve` . This will build and serve all services
+5. Open a new terminal window and run `npm run test:unit`
 
-2. ```pnpm restart``` You can directly stop the 5001 - 5003 ports occupied by other applications, and compile and start the Host and Remote services
+Go To: [localhost:5000](http://localhost:5000/)
 
-3. `CTRL + C` can only stop the host server. You can run `pnpm stop` to stop all services.
-
-### Advanced Demo
-We have added a Demo to show the combination of `Vite + Vue + Pinia + Vue Router + Element Plus`.
-
-- HOST (team-red): [localhost:5001](http://localhost:5001/)
-- REMOTE (team-blue): [localhost:5002](http://localhost:5002/)
-- REMOTE (team-green): [localhost:5003](http://localhost:5003/)
-
-Similarly, we can launch the Dev mode on the Host side for development.
-- HOST (team-red): [localhost:5001](http://localhost:5001/)
-```bash
-cd packages/examples/vue3-advanced-demo/team-red
-pnpm run dev
-```
+`CTRL + C` can only stop the host server. You can run `pnpm stop` to stop all services.
