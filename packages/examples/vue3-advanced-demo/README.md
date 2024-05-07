@@ -1,8 +1,8 @@
-# Vue3 Module Federation Demo
+# Vue3 Module Federation Vitest Bug Reproduction Steps
 
 This example demos consumption of federated modules from a vite bundle. `layout` app depends on components exposed by `home`, `common-lib` and `css-modules` app.
 
-## Running Project
+## Reproduction Steps
 
 1. Clone [adarshdeep-ld/vite-plugin-federation](https://github.com/adarshdeep-ld/vite-plugin-federation) if you haven't already.
 2. At the repository root, install dependencies (`pnpm install`) and build (`pnpm build`).
