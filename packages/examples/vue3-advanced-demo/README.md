@@ -8,7 +8,8 @@ This example demos consumption of federated modules from a vite bundle. `layout`
 2. At the repository root, install dependencies (`pnpm install`) and build (`pnpm build`).
 3. Go to this example folder: `cd packages\examples\vue3-advanced-demo`
 4. Run `pnpm install`, `pnpm build` and `pnpm serve` . This will build and serve all services
-5. Open a new terminal window and run `npm run test:unit`
+5. Open a new terminal window and run`cd team-red`
+6. Run `npm run test:unit`
 
 Go To: [localhost:5000](http://localhost:5000/)
 
